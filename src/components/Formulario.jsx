@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import '../style.css'
 const Formulario = () => {
   const emailRegExp = new RegExp(
     /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
@@ -51,7 +52,7 @@ const Formulario = () => {
         <Form.Label>DNI</Form.Label>
         <Form.Control
           type="number"
-          placeholder="25682920"
+          placeholder="28360960"
           onChange={(e) => setDni(e.target.value)}
           value={dni}
           required
@@ -67,7 +68,7 @@ const Formulario = () => {
           required
         />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button className="btnE" type="submit">
         Enviar
       </Button>
     </Form>
